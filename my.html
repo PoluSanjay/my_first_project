@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#1e293b;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:25px;
+    color:#cbd5e1;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+}
+
+section{
+    padding:60px 50px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    flex:1;
+    min-width:250px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+
+footer{
+    background:#1e293b;
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Sanjay.dev</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Hi, I'm Sanjay 👋</h2>
+    <p>B.Tech Student | Python & C Developer | Building Web & AI Projects</p>
+    <button onclick="alert('Welcome to my portfolio!')">Explore</button>
+</div>
+
+<section>
+    <h2 style="margin-bottom:30px;">My Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Stock Trend Analyzer</h3>
+            <p>Python based project for stock market trend prediction.</p>
+        </div>
+        <div class="card">
+            <h3>Disease Prediction Model</h3>
+            <p>ML based health prediction web application using Flask.</p>
+        </div>
+        <div class="card">
+            <h3>Inclusive Skill Assessment Tool</h3>
+            <p>Web-based quiz application with accessibility features.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sanjay Polu | All Rights Reserved
+</footer>
+
+</body>
+</html>
